@@ -1,0 +1,5 @@
+class Video < ApplicationRecord
+  self.table_name='videos'
+  has_and_belongs_to_many :'tags'
+  join_table='videos_tags'
+end

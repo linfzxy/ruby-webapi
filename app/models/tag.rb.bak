@@ -1,0 +1,6 @@
+class Tag < ApplicationRecord
+  self.table_name='tags'
+  has_and_belongs_to_many :'categories'
+  has_and_belongs_to_many :'videos'
+  join_table='videos_tags'
+end
